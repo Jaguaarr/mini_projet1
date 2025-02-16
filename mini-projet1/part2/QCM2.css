@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding-top: 50px;
+    color: white;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    padding-bottom: 100px;
+}
+
+.score {
+    font-size: 40px;
+    text-shadow: 2px 2px 15px cyan;
+    display: flex;
+    gap: 50px;
+}
+
+#scr {
+    padding-top: 10px;
+    font-size: 45px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+
+.title {
+    text-align: center;
+}
+
+.quiz-container {
+    border: 2px solid white;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 2px 2px 15px rgba(0, 255, 255, 0.5);
+    padding: 20px;
+    width: 400px;
+    text-align: center;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, select {
+    height: 40px;
+    border-radius: 5px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    color: white;
+}
+
+.button {
+    height: 40px;
+    border-radius: 5px;
+    background: rgba(7, 241, 77, 1);
+    box-shadow: 2px 2px 15px white;
+    font-size: 20px;
+    font-family: Orbitron, sans-serif;
+    color: white;
+    padding: 10px;
+    text-shadow: 2px 2px 15px white;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px cyan;
+}
+
+.option {
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    text-shadow: 2px 2px 15px cyan;
+    font-size: 20px;
+    padding: 15px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.option:hover {
+    background: cyan;
+    color: black;
+    transform: scale(1.1);
+    border: 2px solid white;
+    box-shadow: 0 0 20px cyan;
+}
+
+#quiz-form {
+    margin-top: 20px;
+}
+
+#quiz-form button {
+    margin-top: 20px;
+    background: rgba(7, 241, 77, 1);
+    color: white;
+    font-size: 20px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#quiz-form button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px cyan;
+}

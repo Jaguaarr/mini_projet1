@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  padding-top: 50px;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  padding-bottom: 100px;
+  color: white;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.title {
+  display: flex;
+  gap: 20px;
+  padding-left: 80px;
+}
+
+.title p {
+  padding-top: 39px;
+  position: relative;
+  right: 80px;
+}
+
+.quiz-container {
+  border: 2px solid white;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 2px 2px 15px rgba(0, 255, 255, 0.5);
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.option {
+  height: 40px;
+  border-radius: 5px;
+  width: 98.5%;
+  background: rgba(255, 255, 255, 0.2);
+  text-shadow: 2px 2px 15px cyan;
+  font-size: 20px;
+  padding-top: 17px;
+  cursor: pointer;
+}
+
+.option:hover {
+  background: cyan;
+  color: black;
+  transform: scale(1.1);
+  border: 2px solid white;
+  box-shadow: 0 0 20px cyan;
+}
+
+.button {
+  height: 40px;
+  border-radius: 5px;
+  background: rgba(7, 241, 77);
+  font-size: 20px;
+  padding-top: 17px;
+  text-shadow: 2px 2px 15px white;
+  width: 200px;
+  margin-top: 20px;
+  margin-left: 37%;
+  cursor: pointer;
+}
+
+
+#qst2, #qst3, #qst4, #qst5, #qst6, #qst7, #scr, #tit {
+  display: none;
+}
+
+.score {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 40px;
+  text-shadow: 2px 2px 15px cyan;
+  margin-top: 20px;
+}

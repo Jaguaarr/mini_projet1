@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QCMake - Quiz HTML</title>
+  <link rel="stylesheet" href="QCM1.css">
+  <script src="QCM1.js" defer></script>
+</head>
+<body>
+  <div class="main">
+    <div class="title">
+      <h1>Bienvenue dans QCMake</h1>
+      <p>Votre plateforme de développement professionnel</p>
+    </div>
+
+    
+    <div class="quiz-container">
+      <!-- Question 1 -->
+      <div id="qst1">
+        <h2>1. Quelle est la balise qui définit un paragraphe en HTML ?</h2>
+        <div class="options">
+          <div class="option" id="qst1_ans1" onclick="checkQuestion(1, 'qst1_ans1')">A) &lt;div&gt;</div>
+          <div class="option" id="qst1_ans2" onclick="checkQuestion(1, 'qst1_ans2')">B) &lt;p&gt;</div>
+          <div class="option" id="qst1_ans3" onclick="checkQuestion(1, 'qst1_ans3')">C) &lt;span&gt;</div>
+          <div class="option" id="qst1_ans4" onclick="checkQuestion(1, 'qst1_ans4')">D) &lt;section&gt;</div>
+        </div>
+      </div>
+      <!-- Question 2 -->
+      <div id="qst2">
+        <h2>2. Quelle balise est utilisée pour créer un lien hypertexte ?</h2>
+        <div class="options">
+          <div class="option" id="qst2_ans1" onclick="checkQuestion(2, 'qst2_ans1')">A) &lt;a&gt;</div>
+          <div class="option" id="qst2_ans2" onclick="checkQuestion(2, 'qst2_ans2')">B) &lt;link&gt;</div>
+          <div class="option" id="qst2_ans3" onclick="checkQuestion(2, 'qst2_ans3')">C) &lt;href&gt;</div>
+          <div class="option" id="qst2_ans4" onclick="checkQuestion(2, 'qst2_ans4')">D) &lt;nav&gt;</div>
+        </div>
+      </div>
+      <!-- Question 3 -->
+      <div id="qst3">
+        <h2>3. Comment insérer une image dans une page HTML ?</h2>
+        <div class="options">
+          <div class="option" id="qst3_ans1" onclick="checkQuestion(3, 'qst3_ans1')">A) &lt;img src="image.jpg"&gt;</div>
+          <div class="option" id="qst3_ans2" onclick="checkQuestion(3, 'qst3_ans2')">B) &lt;image href="image.jpg"&gt;</div>
+          <div class="option" id="qst3_ans3" onclick="checkQuestion(3, 'qst3_ans3')">C) &lt;src&gt;image.jpg&lt;/src&gt;</div>
+          <div class="option" id="qst3_ans4" onclick="checkQuestion(3, 'qst3_ans4')">D) &lt;picture&gt;image.jpg&lt;/picture&gt;</div>
+        </div>
+      </div>
+      <!-- Question 4 -->
+      <div id="qst4">
+        <h2>4. Quelle est la balise utilisée pour créer une liste à puces ?</h2>
+        <div class="options">
+          <div class="option" id="qst4_ans1" onclick="checkQuestion(4, 'qst4_ans1')">A) &lt;ol&gt;</div>
+          <div class="option" id="qst4_ans2" onclick="checkQuestion(4, 'qst4_ans2')">B) &lt;ul&gt;</div>
+          <div class="option" id="qst4_ans3" onclick="checkQuestion(4, 'qst4_ans3')">C) &lt;li&gt;</div>
+          <div class="option" id="qst4_ans4" onclick="checkQuestion(4, 'qst4_ans4')">D) &lt;list&gt;</div>
+        </div>
+      </div>
+      <!-- Question 5 -->
+      <div id="qst5">
+        <h2>5. Quelle balise HTML est utilisée pour définir un titre principal ?</h2>
+        <div class="options">
+          <div class="option" id="qst5_ans1" onclick="checkQuestion(5, 'qst5_ans1')">A) &lt;h1&gt;</div>
+          <div class="option" id="qst5_ans2" onclick="checkQuestion(5, 'qst5_ans2')">B) &lt;title&gt;</div>
+          <div class="option" id="qst5_ans3" onclick="checkQuestion(5, 'qst5_ans3')">C) &lt;header&gt;</div>
+          <div class="option" id="qst5_ans4" onclick="checkQuestion(5, 'qst5_ans4')">D) &lt;meta&gt;</div>
+        </div>
+      </div>
+      <!-- Question 6 -->
+      <div id="qst6">
+        <h2>6. Quelle balise est utilisée pour ajouter des métadonnées à un document HTML ?</h2>
+        <div class="options">
+          <div class="option" id="qst6_ans1" onclick="checkQuestion(6, 'qst6_ans1')">A) &lt;meta&gt;</div>
+          <div class="option" id="qst6_ans2" onclick="checkQuestion(6, 'qst6_ans2')">B) &lt;head&gt;</div>
+          <div class="option" id="qst6_ans3" onclick="checkQuestion(6, 'qst6_ans3')">C) &lt;link&gt;</div>
+          <div class="option" id="qst6_ans4" onclick="checkQuestion(6, 'qst6_ans4')">D) &lt;script&gt;</div>
+        </div>
+      </div>
+      <!-- Question 7 -->
+      <div id="qst7">
+        <h2>7. Quelle est la bonne structure de base d'un document HTML ?</h2>
+        <div class="options">
+          <div class="option" id="qst7_ans1" onclick="checkQuestion(7, 'qst7_ans1')">A) &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;</div>
+          <div class="option" id="qst7_ans2" onclick="checkQuestion(7, 'qst7_ans2')">B) &lt;html&gt;&lt;body&gt;&lt;/body&gt;&lt;head&gt;&lt;/head&gt;&lt;/html&gt;</div>
+          <div class="option" id="qst7_ans3" onclick="checkQuestion(7, 'qst7_ans3')">C) &lt;head&gt;&lt;html&gt;&lt;/html&gt;&lt;body&gt;&lt;/body&gt;&lt;/head&gt;</div>
+          <div class="option" id="qst7_ans4" onclick="checkQuestion(7, 'qst7_ans4')">D) &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;footer&gt;&lt;/footer&gt;&lt;/html&gt;</div>
+        </div>
+      </div>
+      <!-- Zone d'affichage du score -->
+      <div class="score" id="score">
+        <h2 id="tit">Score:</h2>
+        <div id="scr">0</div>
+      </div>
+    </div>
+    <div class="button" id="but" onclick="valider()">Valider</div>
+  </div>
+</body>
+</html>

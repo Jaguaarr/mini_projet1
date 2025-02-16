@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM interactif</title>
+    <link rel="stylesheet" href="QCM2.css">
+    <script src="QCM2.js" defer></script>
+</head>
+<body>
+    <div class="main">
+        <div class="title">
+            <h1>Bienvenue dans QCMake</h1>
+            <p>Votre plateforme de développement professionnel</p>
+        </div>
+        
+        <div class="score">
+            <h2>Score:</h2>
+            <div id="scr">0</div>
+        </div>
+
+        <div id="timer-container">
+            <p>Temps restant : <span id="timer">15</span> secondes</p>
+        </div>
+
+        <div class="quiz-container" id="quiz-config">
+            <h2>Configurer votre Quiz</h2>
+            <div class="options">
+                <input type="number" id="num_qst" placeholder="Entrer le nombre de questions">
+                
+                <label for="category">Catégorie :</label>            
+                <select id="category">
+                    <option value="9">Général</option>
+                    <option value="18">Histoire</option>
+                    <option value="21">Divertissement</option>
+                </select>
+
+                <label for="difficulty">Difficulté :</label>
+                <select id="difficulty">
+                    <option value="easy">Facile</option>
+                    <option value="medium">Moyen</option>
+                    <option value="hard">Difficile</option>
+                </select>
+
+                <button id="but" class="button">Commencer</button>
+
+            </div>
+        </div>
+
+        <div id="quiz-container" style="display: none;">
+            <div id="quiz-form"></div>
+        </div>
+    </div>
+</body>
+</html>
